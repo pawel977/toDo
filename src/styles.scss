@@ -1,8 +1,25 @@
+@import "app/shared/variables";
 * {
   box-sizing: border-box;
 }
 
-html, body, div {
+html, body, div, h1, h2, h3, h4, h5, h6, p, article, section, ul, li{
   margin: 0;
   padding: 0;
+}
+p, a, span, div {
+  font-size: 14px; //different browser different font size
+}
+
+ul{
+  list-style: none;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  margin-bottom: $footer-height;
 }

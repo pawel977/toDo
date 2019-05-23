@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-    /*{path: '/', component: },*/
+ /*   /!*{path: '/', component: },*!/
     {path: 'client', loadChildren: ''},
     {path: 'admin', loadChildren: ''},
     {
     },
     {path: '', pathMatch: 'full', redirectTo: 'toDoList'},
-    {path: '**', redirectTo: '/'}
+    {path: '**', redirectTo: '/'}*/
   ]
 ;
 

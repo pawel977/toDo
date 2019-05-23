@@ -1,0 +1,74 @@
+@import "~src/app/shared/variables";
+
+
+h1 {
+  font-size: 20px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+button {
+  background: transparent;
+  border: 0;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+
+}
+
+button:hover {
+  animation: hoverButton .5s forwards;
+}
+
+@keyframes hoverButton {
+  from{
+
+  }
+  to {
+    background-color: black;
+    color: white;
+  }
+}
+
+
+.header {
+  height: $header-height - 2px; // minus bottom border
+  background-image: url("~src/assets/crossline-lines.png");
+  border-bottom: 2px solid royalblue;
+  position: relative;
+  &__nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+  &__ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /*padding-left: 15px;*/
+    align-items: center;
+
+    &--li:first-child {
+      padding-left: 15px;
+      margin: 0;
+    }
+
+    &--li {
+      font-weight: bold;
+      height: 100%;
+      text-wrap: none;
+      padding-left: 5px;
+      text-align: center;
+
+    & button {
+      padding-left: 10px;
+    }
+    }
+
+
+  }
+
+  }
+}
