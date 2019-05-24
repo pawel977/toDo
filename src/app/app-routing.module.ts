@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {ToDoListComponent} from './mainView/to-do-list/to-do-list.component';
 
 const routes: Routes = [
- /*   /!*{path: '/', component: },*!/
-    {path: 'client', loadChildren: ''},
-    {path: 'admin', loadChildren: ''},
-    {
-    },
-    {path: '', pathMatch: 'full', redirectTo: 'toDoList'},
-    {path: '**', redirectTo: '/'}*/
+    {path: '', component: ToDoListComponent},
+    {path: '', pathMatch: 'full', redirectTo: 'ToDoListComponent'},
+    {path: '**', redirectTo: 'ToDoListComponent'}
   ]
 ;
 

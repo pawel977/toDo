@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-html, body, div, h1, h2, h3, h4, h5, h6, p, article, section, ul, li{
+html, body, div, h1, h2, h3, h4, h5, h6, p, article, section, ul, li, header, footer{
   margin: 0;
   padding: 0;
 }
@@ -11,15 +11,18 @@ p, a, span, div {
   font-size: 14px; //different browser different font size
 }
 
-ul{
-  list-style: none;
-}
-
 body {
   position: relative;
   min-height: 100vh;
 }
 
-main {
-  margin-bottom: $footer-height;
+main{
+  width: 100vw;
+  height: calc(100vh - 54px - 32px); //first is header second footer
 }
+
+ul{
+  list-style: none;
+}
+
+
