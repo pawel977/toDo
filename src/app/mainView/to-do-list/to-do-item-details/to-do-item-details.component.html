@@ -1,3 +1,20 @@
-<p>
-  to-do-item-details works!
-</p>
+<div class="details__holder">
+  <h3 class="details__holder--title">{{task.title}}</h3>
+
+  <section class="details__holder__description_holder">
+    <p class="details__holder__description_holder--description">
+      {{task.description}}
+    </p>
+  </section>
+
+  <div class="details__holder__button_wrapper">
+    <ul>
+      <li>
+        <button>Delete</button>
+      </li>
+      <li>
+        <button>Modify</button>
+      </li>
+    </ul>
+  </div>
+</div>

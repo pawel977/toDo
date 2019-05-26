@@ -21,6 +21,22 @@ export class ToDoService {
   constructor() {
   }
 
+  createTask() {
+    this.tasks.push(
+      new Task(
+        'asdas',
+        'asddasdasdasdas')
+    );
+  }
+
+  openAddNewMondal(value: boolean) {
+    value = true;
+  }
+
+  closeAddNewModal(value: boolean) {
+    value = false;
+  }
+
   getTask(index: number) {
   return this.tasks[index];
   }

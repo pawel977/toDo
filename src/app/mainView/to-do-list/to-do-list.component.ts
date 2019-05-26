@@ -20,7 +20,7 @@ export class ToDoListComponent implements OnInit {
   }
 
   newTask() {
-
+  this.toDoService.createTask();
   }
 
 }
