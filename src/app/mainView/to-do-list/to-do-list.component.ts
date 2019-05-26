@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ToDoItemComponent} from './to-do-item/to-do-item.component';
+import {ToDoService} from '../../services/to-do.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-to-do-list',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./to-do-list.component.scss']
 })
 export class ToDoListComponent implements OnInit {
-
-  constructor() { }
+  toDoList = [];
+  constructor(private toDoService: ToDoService,
+              private router: Router,
+              private route: ActivatedRoute) {
+  }
 
   ngOnInit() {
+    this.toDoList = this.toDoService.getTasks();
+  }
+
+  newTask() {
+
   }
 
 }

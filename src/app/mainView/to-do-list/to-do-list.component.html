@@ -1,3 +1,17 @@
 <main>
+  <div class="list">
+    <section class="list__section--Todo list__section">
+      <h1>TODO</h1>
+      <button (click)="newTask()">NEW TASK</button>
 
+      <app-to-do-item
+        *ngFor="let task of toDoList; let i = index"
+        [task] = "task"
+        [index] = "i"
+      ></app-to-do-item>
+    </section>
+    <section class="list__router_holder">
+      <router-outlet ></router-outlet>
+    </section>
+    </div>
 </main>

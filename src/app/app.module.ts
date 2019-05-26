@@ -5,9 +5,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ToDoListComponent } from './mainView/to-do-list/to-do-list.component';
+import {HttpClientModule} from '@angular/common/http';
+import {ToDoService} from './services/to-do.service';
 import { ToDoItemComponent } from './mainView/to-do-list/to-do-item/to-do-item.component';
-import { InProgressItemComponent } from './mainView/to-do-list/in-progress-item/in-progress-item.component';
-import { DoneItemComponent } from './mainView/to-do-list/done-item/done-item.component';
+import {FormsModule} from '@angular/forms';
+import { ToDoItemEditComponent } from './mainView/to-do-list/to-do-item-edit/to-do-item-edit.component';
+import { ToDoItemDetailsComponent } from './mainView/to-do-list/to-do-item-details/to-do-item-details.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +19,17 @@ import { DoneItemComponent } from './mainView/to-do-list/done-item/done-item.com
     FooterComponent,
     ToDoListComponent,
     ToDoItemComponent,
-    InProgressItemComponent,
-    DoneItemComponent
+    ToDoItemEditComponent,
+    ToDoItemDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ToDoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,6 +18,9 @@ body {
 }
 
 main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: calc(100vh - 54px - 32px); //first is header second footer
 }
