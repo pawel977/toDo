@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ToDoItemComponent} from './to-do-item/to-do-item.component';
 import {ToDoService} from '../../services/to-do.service';
 import {ActivatedRoute, Router} from '@angular/router';
 
@@ -17,10 +16,6 @@ export class ToDoListComponent implements OnInit {
 
   ngOnInit() {
     this.toDoList = this.toDoService.getTasks();
-  }
-
-  newTask() {
-  this.toDoService.createTask();
   }
 
 }
