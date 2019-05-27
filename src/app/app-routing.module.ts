@@ -17,8 +17,18 @@ const routes: Routes = [
         {path: '**', redirectTo: ''}
       ]
     },
-    {path: 'history', component: HistoryComponent},
-    {path: 'done', component: DoneComponent},
+    {
+      path: 'history', component: HistoryComponent, children: [
+        {path: ':id', component: ToDoItemCreateComponent},
+        {path: '**', redirectTo: ''}
+      ]
+    },
+    {
+      path: 'done', component: DoneComponent, children: [
+        {path: ':id', component: ToDoItemCreateComponent},
+        {path: '**', redirectTo: ''}
+      ]
+    },
     {path: '**', redirectTo: 'ToDoList'}
   ]
 ;

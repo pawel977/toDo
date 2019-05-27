@@ -21,13 +21,21 @@ export class ToDoService {
       ''
     )
   ];
+  private doneTask: Task[] = [];
+  private  allTasksEver: Task[] = [
+  ]
 
-  private allTasksEver() {
+   getAllTasksEver() {
+    return this.allTasksEver;
   }
 
-  private doneTask: Task[] = [];
+
 
   constructor() {
+    this.tasks.forEach(element => {
+      this.allTasksEver.push(element);
+    })
+    console.log(this.allTasksEver);
   }
 
   addDoneTask(i) {
@@ -41,6 +49,9 @@ export class ToDoService {
 
   createTask(title, description) {
     this.tasks.push(
+      new Task(title, description)
+    );
+    this.allTasksEver.push(
       new Task(title, description)
     );
   }

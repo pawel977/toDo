@@ -1,1 +1,6 @@
-<span>IN PROGRESS</span>
+<h3>HISTORY</h3>
+<app-to-do-item
+  *ngFor="let task of allTask; let i = index"
+  [task]="task"
+  [index]="i"
+></app-to-do-item>
