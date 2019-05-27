@@ -16,6 +16,13 @@
       <li>
         <button routerLink="edit">Modify</button>
       </li>
+      <li>
+        <button
+          (click)="toDoService.addDoneTask(id);"
+          [routerLink]="'ToDoList'">
+          DONE
+        </button>
+      </li>
     </ul>
   </div>
 </div>

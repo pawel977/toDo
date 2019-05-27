@@ -21,9 +21,22 @@ export class ToDoService {
       ''
     )
   ];
-  private allTasksEver() {}
+
+  private allTasksEver() {
+  }
+
+  private doneTask: Task[] = [];
 
   constructor() {
+  }
+
+  addDoneTask(i) {
+    this.doneTask.push(this.getTask(i));
+    this.deleteTask(i);
+  }
+
+  getDoneTask() {
+    return this.doneTask;
   }
 
   createTask(title, description) {
@@ -31,16 +44,18 @@ export class ToDoService {
       new Task(title, description)
     );
   }
+
   deleteTask(i: number): void {
     this.tasks.splice(i, 1);
   }
+
   modifyTask(i, newTitle, newDescription?) {
     this.tasks[i].title = newTitle;
     this.tasks[i].description = newDescription;
   }
 
   getTask(index: number) {
-  return this.tasks[index];
+    return this.tasks[index];
   }
 
   getTasks() {

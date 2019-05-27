@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ToDoService} from '../services/to-do.service';
 
 @Component({
   selector: 'app-done',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./done.component.scss']
 })
 export class DoneComponent implements OnInit {
-
-  constructor() { }
+  doneTasks;
+  constructor(private toDoService: ToDoService) { }
 
   ngOnInit() {
+    this.doneTasks = this.toDoService.getDoneTask();
   }
 
 }
