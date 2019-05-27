@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Params} from '@angular/router';
+import {ToDoService} from '../../../services/to-do.service';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-to-do-item-edit',
@@ -7,10 +9,14 @@ import {ActivatedRoute, Params} from '@angular/router';
   styleUrls: ['./to-do-item-edit.component.scss']
 })
 export class ToDoItemEditComponent implements OnInit {
+  @ViewChild('createForm') form: NgForm;
   id: number;
   editMode = false;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+    private toDoService: ToDoService
+  ) { }
 
   ngOnInit() {
     this.route.params
@@ -22,4 +28,12 @@ export class ToDoItemEditComponent implements OnInit {
       );
   }
 
+  onSubmit() {
+   this.toDoService
+     .modifyTask(
+       this.id,
+       this.form.value.title,
+       this.form.value.description
+     );
+  }
 }

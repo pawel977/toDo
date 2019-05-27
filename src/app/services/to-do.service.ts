@@ -7,14 +7,14 @@ export class ToDoService {
   private tasks: Task[] = [
     new Task(
       'Learn Angular',
-      'asdasdasdasdasdasdas'),
+      'learn more about NG'),
     new Task(
-      'title2',
-      'asdasdasdasdasdasdasd'
+      'What About Vue?',
+      'do reaserch about Vue'
     ),
     new Task(
-      'task3',
-      'dasdasdasdasdsdgsdg'
+      'go to work',
+      ''
     )
   ];
   private allTasksEver() {}
