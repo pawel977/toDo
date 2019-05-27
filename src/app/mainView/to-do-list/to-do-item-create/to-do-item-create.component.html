@@ -2,7 +2,7 @@
   <h3>Create New Task</h3>
   <form
     class="create_holder__form"
-    (ngSubmit)="onSubmit()"
+    (ngSubmit)="onSubmit(); form.reset()"
     #createForm="ngForm">
     <div class="create_holder__form--title">
       <label for="title">Title: </label>

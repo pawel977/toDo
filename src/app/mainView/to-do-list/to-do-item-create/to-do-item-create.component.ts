@@ -16,7 +16,6 @@ export class ToDoItemCreateComponent implements OnInit {
 
   ngOnInit() {
   }
-
   onSubmit() {
     this.toDoService.createTask(
       this.form.value.title,
