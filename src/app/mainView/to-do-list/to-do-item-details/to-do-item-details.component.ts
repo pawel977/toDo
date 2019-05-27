@@ -27,14 +27,5 @@ export class ToDoItemDetailsComponent implements OnInit {
       );
   }
 
-  /*onAddToShoppingList() {
-    this.tod.addIngredientsToShoppingList(this.recipe.ingredients);
-  }
-*/
-  onEditTask() {
-    this.router.navigate(['edit'], {relativeTo: this.route});
-    // this.router.navigate(['../', this.id, 'edit'], {relativeTo: this.route});
-  }
-
 
 }

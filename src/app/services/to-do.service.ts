@@ -6,7 +6,7 @@ export class ToDoService {
   taskSelected = new EventEmitter<Task>();
   private tasks: Task[] = [
     new Task(
-      'task1',
+      'Learn Angular',
       'asdasdasdasdasdasdas'),
     new Task(
       'title2',
@@ -17,6 +17,7 @@ export class ToDoService {
       'dasdasdasdasdsdgsdg'
     )
   ];
+  private allTasksEver() {}
 
   constructor() {
   }
@@ -25,6 +26,13 @@ export class ToDoService {
     this.tasks.push(
       new Task(title, description)
     );
+  }
+  deleteTask(i: number): void {
+    this.tasks.splice(i, 1);
+  }
+  modifyTask(i, newTitle, newDescription?) {
+    this.tasks[i].title = newTitle;
+    this.tasks[i].description = newDescription;
   }
 
   getTask(index: number) {
