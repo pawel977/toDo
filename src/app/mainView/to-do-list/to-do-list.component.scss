@@ -3,8 +3,7 @@
   height: 80%;
   min-width: 400px;
   display: flex;
-  min-width: 400px;
-  background-color: red;
+  min-height: 400px;
 
   &__section {
     width: 33.3%;
@@ -24,6 +23,7 @@
 button {
   width: 100%;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 h1 {

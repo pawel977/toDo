@@ -1,16 +1,17 @@
-<div class="details__holder">
-  <h3 class="details__holder--title">{{task.title}}</h3>
+<div class="details_holder">
+  <h3 class="details_holder--title">{{task.title | uppercase}}</h3>
 
-  <section class="details__holder__description_holder">
-    <p class="details__holder__description_holder--description">
+  <section class="details_holder__description_holder">
+    <p class="details_holder__description_holder--description">
       {{task.description}}
     </p>
   </section>
 
-  <div class="details__holder__button_wrapper">
+  <div class="details_holder__button_wrapper">
     <ul>
       <li>
-        <button (click)="toDoService.deleteTask(id)">Delete</button>
+        <button (click)="toDoService.deleteTask(id)"
+                [routerLink]="'ToDoList'">Delete</button>
       </li>
       <li>
         <button routerLink="edit">Modify</button>

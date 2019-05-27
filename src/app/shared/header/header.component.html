@@ -1,10 +1,12 @@
 <header class="header">
   <nav class="header__nav">
     <ul class="header__nav__ul">
-      <li class="header__nav__ul--li">
+      <li class="header__nav__ul--li"
+          [routerLink]="'ToDoList'">
         <h1>TODO APP</h1>
       </li>
-      <li class="header__nav__ul--li">
+      <li class="header__nav__ul--li"
+          [routerLink]="'ToDoList'">
         <button>
           BOARD
         </button>
@@ -14,8 +16,10 @@
           HISTORY
         </button>
       </li>
-      <li class="header__nav__ul--li">
-        <button>
+      <li class="header__nav__ul--li"
+          [routerLink]="'ToDoList/new'">
+        <button
+          >
           ADD
         </button>
       </li>
