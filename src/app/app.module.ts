@@ -14,6 +14,7 @@ import { ToDoItemDetailsComponent } from './mainView/to-do-list/to-do-item-detai
 import { ToDoItemCreateComponent } from './mainView/to-do-list/to-do-item-create/to-do-item-create.component';
 import { HistoryComponent } from './history/history.component';
 import { DoneComponent } from './done/done.component';
+import { PreviewComponent } from './preview/preview.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DoneComponent } from './done/done.component';
     ToDoItemCreateComponent,
     HistoryComponent,
     DoneComponent,
+    PreviewComponent,
 
   ],
   imports: [
