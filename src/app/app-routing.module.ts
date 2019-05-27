@@ -4,6 +4,7 @@ import {ToDoListComponent} from './mainView/to-do-list/to-do-list.component';
 import {ToDoItemDetailsComponent} from './mainView/to-do-list/to-do-item-details/to-do-item-details.component';
 import {ToDoItemEditComponent} from './mainView/to-do-list/to-do-item-edit/to-do-item-edit.component';
 import {ToDoItemCreateComponent} from './mainView/to-do-list/to-do-item-create/to-do-item-create.component';
+import {HistoryComponent} from './history/history.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'ToDoList', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
         {path: '**', redirectTo: ''}
       ]
     },
+    {path: 'history', component: HistoryComponent},
     {path: '**', redirectTo: 'ToDoList'}
   ]
 ;

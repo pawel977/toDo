@@ -13,6 +13,10 @@ export class ToDoService {
       'do reaserch about Vue'
     ),
     new Task(
+      'End Project',
+      'asap'
+    ),
+    new Task(
       'go to work',
       ''
     )

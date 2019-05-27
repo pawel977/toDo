@@ -6,4 +6,10 @@
   width: 100%;
   height: $footer-height ;
   background-color: black;
+  color: white;
+  text-align: center;
+
+  span {
+    opacity: 0.65;
+  }
 }
