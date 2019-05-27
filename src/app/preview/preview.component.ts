@@ -25,7 +25,6 @@ export class PreviewComponent implements OnInit {
           this.task = this.toDoService.getTask(this.id);
         }
       );
-    console.log(this.id);
   }
 
 
