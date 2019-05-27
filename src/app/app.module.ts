@@ -11,7 +11,7 @@ import { ToDoItemComponent } from './mainView/to-do-list/to-do-item/to-do-item.c
 import {FormsModule} from '@angular/forms';
 import { ToDoItemEditComponent } from './mainView/to-do-list/to-do-item-edit/to-do-item-edit.component';
 import { ToDoItemDetailsComponent } from './mainView/to-do-list/to-do-item-details/to-do-item-details.component';
-import { AddNewModalComponent } from './mainView/to-do-list/modal/add-new-modal/add-new-modal.component';
+import { ToDoItemCreateComponent } from './mainView/to-do-list/to-do-item-create/to-do-item-create.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { AddNewModalComponent } from './mainView/to-do-list/modal/add-new-modal/
     ToDoItemComponent,
     ToDoItemEditComponent,
     ToDoItemDetailsComponent,
-    AddNewModalComponent,
+    ToDoItemCreateComponent,
 
   ],
   imports: [

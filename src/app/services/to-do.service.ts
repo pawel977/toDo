@@ -21,20 +21,10 @@ export class ToDoService {
   constructor() {
   }
 
-  createTask() {
+  createTask(title, description) {
     this.tasks.push(
-      new Task(
-        'asdas',
-        'asddasdasdasdas')
+      new Task(title, description)
     );
-  }
-
-  openAddNewMondal(value: boolean) {
-    value = true;
-  }
-
-  closeAddNewModal(value: boolean) {
-    value = false;
   }
 
   getTask(index: number) {
