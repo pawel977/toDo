@@ -12,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 import { ToDoItemEditComponent } from './mainView/to-do-list/to-do-item-edit/to-do-item-edit.component';
 import { ToDoItemDetailsComponent } from './mainView/to-do-list/to-do-item-details/to-do-item-details.component';
 import { ToDoItemCreateComponent } from './mainView/to-do-list/to-do-item-create/to-do-item-create.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ToDoItemCreateComponent } from './mainView/to-do-list/to-do-item-create
     ToDoItemEditComponent,
     ToDoItemDetailsComponent,
     ToDoItemCreateComponent,
+    HistoryComponent,
 
   ],
   imports: [
