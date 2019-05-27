@@ -9,6 +9,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class ToDoListComponent implements OnInit {
   toDoList = [];
+
   constructor(private toDoService: ToDoService,
               private router: Router,
               private route: ActivatedRoute) {

@@ -13,6 +13,7 @@ import { ToDoItemEditComponent } from './mainView/to-do-list/to-do-item-edit/to-
 import { ToDoItemDetailsComponent } from './mainView/to-do-list/to-do-item-details/to-do-item-details.component';
 import { ToDoItemCreateComponent } from './mainView/to-do-list/to-do-item-create/to-do-item-create.component';
 import { HistoryComponent } from './history/history.component';
+import { DoneComponent } from './done/done.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HistoryComponent } from './history/history.component';
     ToDoItemDetailsComponent,
     ToDoItemCreateComponent,
     HistoryComponent,
+    DoneComponent,
 
   ],
   imports: [
